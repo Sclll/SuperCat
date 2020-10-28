@@ -12,6 +12,7 @@ import org.greenrobot.eventbus.ThreadMode;
 import cn.scllll.supercat.Bean.EventState;
 import cn.scllll.supercat.Modules.Operation.OperationBuilder;
 import cn.scllll.supercat.Task.EarnCoins;
+import cn.scllll.supercat.Task.JD;
 
 public class AutoService extends AccessibilityService {
     @Override
@@ -28,6 +29,8 @@ public class AutoService extends AccessibilityService {
     public void onMessageEvent(EventState state){
         OperationBuilder builder;
         switch (state.id){
+            case 0:
+                disableSelf();
             case 1:
                 builder = EarnCoins.earnCoinsNormalResolution();
                 builder.setService(this);
@@ -35,6 +38,16 @@ public class AutoService extends AccessibilityService {
                 break;
             case 2:
                 builder = EarnCoins.earnCoinsHighResolution();
+                builder.setService(this);
+                builder.build();
+                break;
+            case 3:
+                builder = JD.earnCoinsJDNormalResolution();
+                builder.setService(this);
+                builder.build();
+                break;
+            case 4:
+                builder = JD.earnCoinsJDHighResolution();
                 builder.setService(this);
                 builder.build();
                 break;

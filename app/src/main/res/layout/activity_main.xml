@@ -7,12 +7,34 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/start"
+        android:id="@+id/startTB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="开始赚瞄币"
+        android:text="天猫赚瞄币"
+        app:layout_constraintBottom_toTopOf="@+id/startJD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startJD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="京东领金币"
+        app:layout_constraintBottom_toTopOf="@+id/stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTB" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止执行"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/startJD" />
 </androidx.constraintlayout.widget.ConstraintLayout>
