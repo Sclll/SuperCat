@@ -1,6 +1,10 @@
 # SuperCat
  淘宝&天猫双十一活动，超级星秀猫，安卓端自动完成任务的app。
 
+基于Android无障碍服务开发的自动完成操作。基本模块都已封装好，任务完成流程文件在文件夹Task中。
+
+打包好的App在release中下载：https://github.com/Sclll/SuperCat/releases/
+
 ### 使用步骤：
 
 安装完成后打开app，进入主页：
