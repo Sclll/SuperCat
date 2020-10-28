@@ -22,3 +22,7 @@
 完成后，会自动返回桌面。
 
 如果App提示不支持该分辨率的手机。请在issue中反馈手机屏幕分辨率以及以下两个页面的截图。我会及时更新程序。
+
+<img src="Screenshot\5.png" style="zoom:100%;" />
+
+<img src="Screenshot\6.png" style="zoom:100%;" />
